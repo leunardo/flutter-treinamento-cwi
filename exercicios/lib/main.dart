@@ -4,6 +4,7 @@ import 'package:exercicios/exercicio_3/exercicio3.page.dart';
 import 'package:exercicios/exercicio_4/exercicio4.page.dart';
 import 'package:exercicios/exercicio_5/routes.dart';
 import 'package:exercicios/exercicio_6/calc.page.dart';
+import 'package:exercicios/exercicio_8/ui/pages/exercicio_9.page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: useRouting ? Routing.routes : {},
       initialRoute: useRouting ? Exercicio3Page.routeName : null,
-      home: useRouting ? null : CalcPage(),
+      home: useRouting ? null : Exercicio9Page(),
     );
   }
 }
